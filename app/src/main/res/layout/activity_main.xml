@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.lwu.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/txvScreen"
+        android:layout_width="0dp"
+        android:layout_height="118dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:autoSizeMaxTextSize="72sp"
+        android:autoSizeMinTextSize="24sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="252dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="7"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="8"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="9"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="224dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:onClick="onClickOperator"
+        android:text="+"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:onClick="onClickClear"
+        android:text="C"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:onClick="onClickEqual"
+        android:text="="
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button17"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="16dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="4"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="5"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="6"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:onClick="onClickOperator"
+        android:text="-"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="3"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/button16"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/button19"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:onClick="onClickOperator"
+        android:text="x"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button12"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="16dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="1"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:onClick="onClickNumber"
+        android:text="2"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/button15"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:onClick="onClickOperator"
+        android:text="÷"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="252dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="16dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:onClick="onClickDot"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="16dp"
+        android:onClick="onClickDot"
+        android:text="·"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button13"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
